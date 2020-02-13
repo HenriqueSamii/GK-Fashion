@@ -1,0 +1,487 @@
+﻿		/*//<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Roboto" rel="stylesheet">
+		//<script src="js/modernizr_custom.js"></script>------------- caso necessario para o html*/
+html
+{
+    overflow: scroll;
+}
+
+body {
+	background: #ededed;
+	font-family: 'Roboto', sans-serif;
+	/*margin-left: 8em;*/
+}
+
+#container{
+	width:940px;
+	margin: 0 auto;
+}
+
+header h1 {
+    height: 134px;
+    width:130px;
+    display: block;
+    text-indent: -9999px;
+    background: url("../img/logo_GK.png") no-repeat;
+    margin-left: 40px;
+}
+
+h2{
+	border-bottom: solid 2px;
+	border-bottom-color: rosybrown;
+	font-size: 1.2em;
+	margin-top: 30px;
+}
+
+figure{
+	background-color: #F2EDED;
+	border: 1px solid black;
+	text-align: center;
+	margin: 15px;
+	padding: 30px;
+}
+
+figcaption{
+	margin-top: 10px;
+}
+
+p{
+	margin: 15px 45px 0px 45px;
+	line-height: 1.5em;
+}
+
+#centro-distribuicao{
+	width: 550px;
+	margin: 0 auto;
+}
+
+#familia-teles{
+	float: right;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#diferenciais li{
+	margin-top: 15px;
+	margin-left: 60px;
+}
+
+a {
+    text-decoration: none;
+	color: goldenrod;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+footer{
+	color: #ccc;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: url(../img/fundo-rodape.png);
+	clear: both;
+}
+
+footer img{
+	vertical-align: middle;
+ 	margin-left: 30px;
+}
+
+
+ul.social{
+    text-indent: -9999px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+ul.social li {
+	list-style: none;
+    display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	height: 32px;
+    width: 32px;
+}
+.social li a {
+	display: block;
+	height: 100%;
+    width: 100%;
+	}
+ul.social a[href*="facebook.com"] {
+	background-image: url(../img/sociais.png);
+	background-position: 0px 0px;
+	overflow: hidden;
+}
+
+ul.social a[href*="twitter.com"] {
+	background-image: url(../img/sociais.png);
+	background-position: 32px 0px;
+	overflow: hidden;
+}
+
+ul.social a[href*="plus.google.com"] {
+	background-image: url(../img/sociais.png);
+	background-position: 76px 0px;
+	overflow: hidden;
+}
+
+.caixa-footer{
+	position: relative;
+	padding: 20px 20px 20px 20px;
+}
+
+.social{
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+/* CSS para index */
+
+header{
+	position: relative;
+}
+
+.sacola{
+	background-image: url("../img/sacola.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-align: right;
+	width: 140px;
+	position: absolute;
+	top:0;
+	right:0;
+	padding-right: 35px;
+}
+
+.sacola p{
+	empty-cells: show; 
+}
+
+.menu-principal{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-principal ul{
+  list-style: none;
+}
+
+.menu-principal li{
+  display: inline;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.menu-principal a:hover{
+	text-decoration: none;
+	color: teal;
+}
+
+.busca , .menu-departamentos{
+	background: #dcdcdc;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 10px;
+	width: 230px;
+	float: left;
+}
+
+.menu-departamentos{
+	clear: both;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.menu-departamentos h2, .busca h2, .busca form{
+	margin: 10px 10px 10px 10px;
+}
+
+.busca{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.busca input{
+	vertical-align: middle;
+}
+
+.busca input[type='search']{
+	width: 170px;
+	height: 25px;
+	border-radius: 10px;
+}
+
+.destaque{
+	margin-top: 10px;
+}
+
+.menu-departamentos li {
+	background-color: white;
+	margin-bottom: 1px;
+	padding: 5px 10px;
+}
+.menu-departamentos a {
+	text-decoration: none;
+	color: grey;
+}
+.menu-departamentos a:hover {
+	text-decoration: none;
+}
+.menu-departamentos li ul{
+	display:none;
+}
+.menu-departamentos li:hover ul {
+	display: block;
+}
+
+.menu-departamentos ul ul li{
+	background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before{
+	content: '\272A';
+	padding-right: 3px;
+}
+
+.painel{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;
+	width: 445px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px #888888;
+}
+
+.painel h2{
+	text-shadow: 2px 2px 0px rgba(255,255,255,0.8);
+}
+
+.painel h2:before {
+content: '\2756';
+padding-right: 5px;
+opacity: 0.4;
+}
+
+.novidades{
+	float: left;
+	background: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.mais-vendidos{
+	float: right;
+	background: #dcdcf5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.painel li{
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	margin: 2px 2px 2px 2px;
+	padding-bottom:10px;
+	transition-timing-function: ease-out;
+	transition: 0.7s;
+}
+
+.painel li:hover{
+	box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+	background-color:rgba(255,255,255, 0.8);
+	transform:scale(1.2) rotate(-5deg);
+	transition-timing-function: ease-in;
+	transition: 0.7s;
+}
+
+.painel h2{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.painel a{
+	text-decoration: none;
+	color: #333;
+	text-align: center;
+}
+
+.painel figure, .painel figcaption{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.painel img{
+	width: 100%;
+}
+
+
+/* CSS para contacto */
+
+textarea{
+	width: 29.875em;
+	height: 18.75em;
+}
+
+label{
+	margin-top: 15px;
+	margin-bottom: 2px;
+}
+label, input{
+	display:block;
+}
+
+
+/* CSS para cartao fidel */
+tr:nth-child(odd){
+	background-color: #f4f19f;
+}
+
+tr:nth-child(even){
+	background-color: white;
+}
+
+table{
+	margin-top: 0.5em;
+}
+
+
+/*CSS para media query */
+
+@media screen and (max-width:480px) {
+	#container{
+		width:87%;
+	}
+
+	header h1 {
+		margin-left: 0em;
+	}
+
+	p{
+		margin: 0.9375em 0.9375em 0em 0.9375em;
+		line-height: 1.5em;
+	}
+
+	figure{
+		margin: 0em;
+		padding:0.625em;
+	}
+
+	#centro-distribuicao{
+		width: 90%;
+	}
+	#centro-distribuicao img{
+		width: 100%;
+	}
+
+	#familia-teles{
+		width: 60%;
+		margin-top: 1.5em; 
+	}
+
+	#familia-teles img{
+		width: 100%;
+	}
+
+	#diferenciais li{
+		margin-top: 0.9375em;
+		margin-left: 1.5em;
+	}
+
+	.social{
+	margin-top: 2.5em;
+	}
+
+	.caixa-footer{
+		font-size: 0.7em;
+	}
+
+	textarea{
+		width: 100%;
+	}
+
+	.sacola{
+		width: 100px;
+		font-size: 0.8em;
+	}
+
+	.menu-principal{
+		width: 70%;
+	}
+
+	.menu-principal li{
+   	float:right;
+	font-size: 1.17em;
+	margin: 0.8em 0em 0em 0.5em;
+	line-height: 0.2em;
+	}
+	/*//////////////////////////*/
+
+	#fotoModelo{
+		width: 100%;
+	}
+
+	.busca , .menu-departamentos{
+		width: 100%;
+		float: none;
+	}
+
+	.painel{
+		width: 100%;
+		margin: 0 auto;	
+	}
+
+	.novidades, .mais-vendidos{
+		float: none;
+		margin-left: 0em;
+		padding-right: 0em;
+	}
+
+	.painel li{
+		width: 47%;
+		margin: 0px 0px 0px 0px;
+		padding-bottom:1em;
+	}
+
+}
+
+@media screen and (max-width:320px) {
+	#container{
+		width:100%;
+	}
+
+	main{
+		margin-left: 0.375em;
+		margin-right: 0.375em;
+	}
+
+	p{
+		margin: 0.9375em 0.3125em 0em 0.3125em;
+		line-height: 1.5em;
+	}
+
+	#familia-teles{
+		width: 83%;
+		margin-top: 1.5em;
+		float: none;
+
+	}
+
+	.menu-principal li{
+		font-size: 1.05em;
+		margin: 0.8em 0em 0em 0.5em;
+	}
+
+	.painel li{
+		width: 90%;
+	}
+	.novidades, .mais-vendidos{
+		margin-right: 2em;
+	}
+
+}
